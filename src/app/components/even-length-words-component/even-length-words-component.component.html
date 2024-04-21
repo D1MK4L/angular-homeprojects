@@ -1,0 +1,8 @@
+<h5 class="d-flex ms-3">Random Jokes Even</h5>
+<div class="d-flex flex-column gap2 mt-2 w-80">
+    <mat-card class="d-flex w-80" *ngFor="let joke of jokes" >
+        <mat-card-content>
+            <p class="text-wrap gap-1 me-1 w-30"> {{ joke }} </p>
+        </mat-card-content>   
+    </mat-card>    
+</div>

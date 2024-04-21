@@ -3,6 +3,12 @@
   
     <nav class="d-flex navbar navbar-dark bg-primary justify-content-center">
       <a role="button" class="navbar-brand ms-3 " routerLink="">Welcome to my Home Projects with Angular</a>
-    </nav>  
+    </nav>
+    <div class="d-flex flex-row gap-2">      
+        <app-list-group-menu></app-list-group-menu>      
+      <div class="flex-grow-1 p-2 text-nowrap">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
   </div>   
 </div>

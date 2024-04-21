@@ -1,0 +1,20 @@
+<div class = "container">
+    <div class="d-flex flex-column gap-2">    
+      <nav class="d-flex navbar navbar-dark bg-primary-subtle  justify-content-center">
+        <a role="button" class="navbar-brand ms-3 " routerLink="">Fun For Nerds</a>
+      </nav>  
+    </div>   
+  </div>
+  <p></p>
+<div class="d-flex flex-column gap-2 w-75 ">
+    <div class="d-flex gap-2 aligh-items-center">
+        <input type="text" class="form-control ms-3"
+        (input)="onUserInput($event)"/>
+        <button class="btn btn-primary btn-sm" (click)="onSubmit()">Submit</button>             
+    </div>
+    <div class="d-flex flex-row gap-5 justify-content-between">
+        <app-even-length-words-component [jokes]="dadJokes"></app-even-length-words-component>
+        <p></p>
+        <app-odd-length-words-component [jokes]="chuckNorrisJokes"></app-odd-length-words-component>
+    </div>
+</div>
